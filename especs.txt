@@ -1,0 +1,68 @@
+debian12@debian: inxi -Fz
+System:
+  Kernel: 6.1.0-53-amd64 arch: x86_64 bits: 64 Desktop: KDE Plasma v: 5.27.5
+    Distro: Debian GNU/Linux 12 (bookworm)
+Machine:
+  Type: Desktop System: HP product: HP Z2 Tower G9 Workstation Desktop PC
+    v: SBKPF,DWKSBLF,SBKPFV3 serial: <superuser required>
+  Mobo: HP model: 895C v: KBC Version 12.03.46 serial: <superuser required>
+    UEFI: HP v: U50 Ver. 03.05.01 date: 08/25/2025
+CPU:
+  Info: 20-core (8-mt/12-st) model: Intel Core i7-14700K bits: 64
+    type: MST AMCP cache: L2: 28 MiB
+  Speed (MHz): avg: 1097 min/max: 800/5500:5600:4300 cores: 1: 800 2: 800
+    3: 800 4: 800 5: 800 6: 800 7: 800 8: 800 9: 2397 10: 800 11: 800 12: 800
+    13: 938 14: 800 15: 1378 16: 2996 17: 3442 18: 800 19: 800 20: 800 21: 800
+    22: 800 23: 800 24: 800 25: 800 26: 800 27: 800 28: 1975
+Graphics:
+  Device-1: Intel Raptor Lake-S GT1 [UHD Graphics 770] driver: i915 v: kernel
+  Device-2: NVIDIA TU117GL [T1000 8GB] driver: nvidia v: 535.309.01
+  Display: x11 server: X.Org v: 1.21.1.7 with: Xwayland v: 22.1.9 driver: X:
+    loaded: nvidia gpu: i915,nvidia resolution: 1920x1080
+  API: OpenGL v: 4.6.0 NVIDIA 535.309.01 renderer: NVIDIA T1000
+    8GB/PCIe/SSE2
+Audio:
+  Device-1: Intel Alder Lake-S HD Audio driver: snd_hda_intel
+  Device-2: NVIDIA driver: snd_hda_intel
+  API: ALSA v: k6.1.0-53-amd64 status: kernel-api
+  Server-1: PipeWire v: 0.3.65 status: active
+Network:
+  Device-1: Intel Alder Lake-S PCH CNVi WiFi driver: iwlwifi
+  IF: wls5f3 state: down mac: <filter>
+  Device-2: Intel Ethernet I219-LM driver: e1000e
+  IF: eno1 state: up speed: 1000 Mbps duplex: full mac: <filter>
+  IF-ID-1: br-730e44b3bcd3 state: down mac: <filter>
+  IF-ID-2: br-7405b3ee8b59 state: down mac: <filter>
+  IF-ID-3: br-b53bb294985d state: up speed: 10000 Mbps duplex: unknown
+    mac: <filter>
+  IF-ID-4: docker0 state: down mac: <filter>
+  IF-ID-5: veth5256668 state: up speed: 10000 Mbps duplex: full
+    mac: <filter>
+  IF-ID-6: vethb27b5a8 state: up speed: 10000 Mbps duplex: full
+    mac: <filter>
+Bluetooth:
+  Device-1: Intel AX211 Bluetooth type: USB driver: btusb
+  Report: hciconfig ID: hci0 state: up address: <filter>
+RAID:
+  Hardware-1: Intel Volume Management Device NVMe RAID Controller Intel
+    driver: vmd
+Drives:
+  Local Storage: total: 1.84 TiB used: 95.27 GiB (5.1%)
+  ID-1: /dev/nvme0n1 vendor: Samsung model: MZVL81T0HELB-00BH1
+    size: 953.87 GiB
+  ID-2: /dev/sda vendor: HGST (Hitachi) model: HUS722T1TALA604
+    size: 931.51 GiB
+Partition:
+  ID-1: / size: 258.47 GiB used: 95.15 GiB (36.8%) fs: ext4
+    dev: /dev/nvme0n1p6
+  ID-2: /boot/efi size: 259.5 MiB used: 125 MiB (48.2%) fs: vfat
+    dev: /dev/nvme0n1p1
+Swap:
+  ID-1: swap-1 type: partition size: 29.8 GiB used: 0 KiB (0.0%)
+    dev: /dev/nvme0n1p5
+Sensors:
+  System Temperatures: cpu: 38.0 C mobo: N/A gpu: nvidia temp: 43 C
+  Fan Speeds (RPM): N/A gpu: nvidia fan: 36%
+Info:
+  Processes: 489 Uptime: 2h 9m Memory: 31.05 GiB used: 5.45 GiB (17.6%)
+  Shell: Bash inxi: 3.3.26
